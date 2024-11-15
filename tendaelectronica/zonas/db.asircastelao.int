@@ -1,0 +1,17 @@
+$TTL            604800	
+@		IN      SOA	  ns.asircastelao.int. root.asircastelao.int. (
+				  2          ; Serial
+				  604800     ; Refresh 
+				  86400      ; Retry 
+				  2419200    ; Expire
+				  604800 )   ; Negative Cache TTL
+				  
+;Registros NS
+@		IN      NS	          ns.asircastelao.int.
+@               IN      AAAA              ::1
+@               IN      A                 172.28.5.1
+ns		IN      A		  172.28.5.1
+test	        IN      A		  172.28.5.4
+www		IN      A		  172.28.5.7
+alias	        IN      CNAME	  test
+texto	        IN      TXT       mensaje

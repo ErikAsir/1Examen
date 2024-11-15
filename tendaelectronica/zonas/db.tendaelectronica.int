@@ -1,0 +1,17 @@
+$TTL            604800	
+@		IN      SOA	  ns.tiendaelectronica.int. root.tiendaelectronica.int. (
+				  2          ; Serial
+				  604800     ; Refresh 
+				  86400      ; Retry 
+				  2419200    ; Expire
+				  604800 )   ; Negative Cache TTL
+				  
+;Registros NS
+@		IN      NS	           ns.asircastelao.int.
+@               IN      AAAA               ::1
+@               IN      A                  172.16.0.1
+ns		IN      A		   172.16.0.1
+test	        IN      A		   172.16.0.4
+www		IN      CNAME     owncloud 172.16.0.7
+alias	        IN      CNAME	  test
+texto	        IN      TXT       1234ASDF
